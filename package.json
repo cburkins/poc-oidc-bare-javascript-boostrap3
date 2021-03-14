@@ -1,0 +1,26 @@
+{
+  "name": "poc-oidc_client-plain-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://cburkins@github.com/cburkins/poc-oidc_client-plain-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cburkins/poc-oidc_client-plain-javascript/issues"
+  },
+  "homepage": "https://github.com/cburkins/poc-oidc_client-plain-javascript#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "node-static": "^0.7.11",
+    "oidc-client": "^1.11.5"
+  }
+}
