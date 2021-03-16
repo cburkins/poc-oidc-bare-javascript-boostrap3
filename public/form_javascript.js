@@ -47,6 +47,7 @@ var settings_okta = {
 // Gets passed directly into Oidc.UserManager instantiation
 // documentation: https://github.com/IdentityModel/oidc-client-js/wiki
 // NOTE: you need to update the PORT=XXXX within package.json to be 3155
+// NOTE: Your may need to move static pages around a bit to match the config defined here (e.g. callback location)
 var settings_fedlogin = {
     authority: "https://fedlogin-dev.jnj.com",
     client_id: "chad-jnj-poc-app01-2020june",
