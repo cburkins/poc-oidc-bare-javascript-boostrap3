@@ -68,6 +68,26 @@ var settings_fedlogin = {
     prompt: "login",
 };
 
+var settings_azure = {
+    authority: "https://login.microsoftonline.com/3ac94b33-9135-4821-9502-eafda6592a35/v2.0",
+    client_id: "9d8dbaf6-8a28-499d-af06-eee7b517938d",
+    popup_redirect_uri: "http://localhost:3155/authentication/callback",
+    silent_redirect_uri: "http://localhost:3155/silent-renew.html",
+    post_logout_redirect_uri: "http://localhost:3155/index.html",
+    response_type: "code",
+    scope: "openid",
+
+    accessTokenExpiringNotificationTime: 4,
+
+    // Only relevant to event "accessTokenExpiring"
+    automaticSilentRenew: false,
+
+    filterProtocolClaims: true,
+    // "login" forces login, "consent" forces consent, null shows login/consent as needed, "none" forces no login and no consent
+    // docs: https://openid.net/specs/openid-connect-core-1_0.html
+    prompt: "login",
+};
+
 // helper function to show data to the user
 function display(selector, data) {
     if (data && typeof data === "string") {
@@ -81,7 +101,7 @@ function display(selector, data) {
 }
 
 // Create a new Oidc UserManager
-var manager = new Oidc.UserManager(settings_fedlogin);
+var manager = new Oidc.UserManager(settings_azure);
 var user;
 
 // Tell oidc_client how/where we'd like to do console logging.
