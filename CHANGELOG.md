@@ -15,6 +15,11 @@ Types of changes
 
 -   None
 
+## 2021-09-18
+
+-   Tested login AND logout (redirect) with J&J Azure OIDC, worked
+-   The only out-of-date NPM library is bootstrap, using "3.4.1", wants "5.1.1". Ignored this since code relies on Bootstrap v3
+
 ## 2021-03-15
 
 ### Changed
@@ -27,4 +32,3 @@ Types of changes
 ### Added
 
 -   Initial release
-

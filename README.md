@@ -16,3 +16,12 @@ Uses node.js to serve up a static HTML file containing a small amount of javascr
 # Screenshot
 
 ![image](https://user-images.githubusercontent.com/9342308/111884954-2cd49e80-899b-11eb-8ab8-e5407b16ca00.png)
+
+# Installation
+
+1. Install node-js
+1. Run `npm install`
+1. NOTE: OAUTH Endpoint connection details are hard-coded into `public/form_javascript.js`
+1. Run `npm run start`
+1. Manually open browser
+1. Navigate to `http://localhost:3155`
